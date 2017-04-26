@@ -1,0 +1,37 @@
+<!-- http://html5doctor.com/html5-custom-data-attributes/ -->
+<meta data-name="details" content="52:AS6[rxSdsMd4RgYXJgeabsRAVBZ:0406139009]" />
+
+<!-- OR http://www.whatwg.org/specs/web-apps/current-work/multipage/elements.html#custom-data-attribute -->
+<meta data-details="52:AS6[rxSdsMd4RgYXJgeabsRAVBZ:0406139009]" data-policyId="0123456789" />
+
+<!-- OR on head -->
+<head
+    data-details="52:AS6[rxSdsMd4RgYXJgeabsRAVBZ:0406139009]" 
+    data-policyId="1234567890"
+    data-partyId="0987654321"
+    data-emailAddress="user@email.com"
+    data-error="49"
+    data-subsessionid="bffd5bc0-a03e-42e5-a531-50529dae57e3">
+</head>
+
+<!-- OR microdata -->
+<head itemscope>
+  <meta itemprop="details" content="52:AS6[rxSdsMd4RgYXJgeabsRAVBZ:0406139009]" />
+  <meta itemprop="policyId" content="1234567890" />
+  <meta itemprop="partyId" content="0987654321" />
+  <link itemprop="emailAddress" href="mailto:user@email.com" /> <!-- or use a meta element if you don’t want to provide a full URI with "mailto:" scheme -->
+  <meta itemprop="error" content="49" />
+  <meta itemprop="subsessionid" content="bffd5bc0-a03e-42e5-a531-50529dae57e3" />
+</head>
+
+<!-- OR in script -->
+<head>
+  <script type="text/plain">
+    details = 52:AS6[rxSdsMd4RgYXJgeabsRAVBZ:0406139009]
+    policyId = 1234567890
+    partyId = 0987654321
+    emailAddress = user@email.com
+    error = 49
+    subsessionid = bffd5bc0-a03e-42e5-a531-50529dae57e3
+  </script>
+</head>
