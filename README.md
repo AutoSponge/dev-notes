@@ -9,3 +9,6 @@ const view = new Proxy(
   {get: (base, module) => require(base + path.sep + module)}
 );
 ```
+
+# TODO
+- [ ] combine servify and awaiting to make a very clean remoting api
