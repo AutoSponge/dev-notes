@@ -12,3 +12,5 @@ const view = new Proxy(
 
 # TODO
 - [ ] combine servify and awaiting to make a very clean remoting api
+
+https://bloomberg.github.io/bucklescript/Manual.html
