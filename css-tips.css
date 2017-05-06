@@ -2,6 +2,43 @@
   display: none; 
 }
 
+/* 
+Grid
+*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+}
+
+.grid > * {
+  flex: 1 0 10em;
+  margin: 0.5em;
+}
+
+.grid > *:first-child {
+  /* example to set an item to 100% (subtract gutter (gutter = 2 * margin)) */
+  flex-basis: calc(100% - 1em);
+}
+
+/*
+Body
+*/
+* {
+  box-sizing: border-box; /* should be covered by reset */
+}
+
+body {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
 /*
 Headers
 */
