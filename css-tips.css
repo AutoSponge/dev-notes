@@ -1,9 +1,38 @@
-*:empty { 
-  display: none 
+[hidden] { 
+  display: none; 
 }
 
+/*
+Headers
+*/
+* + h2,
+* + h3 {
+  /* em, not rem: keeps headings closer to their content */
+  margin-top: 1.5em;
+}
+
+/*
+Main
+*/
 main {
-    max-width: 60rem;
+  max-width: 60rem;
+}
+
+main * + * {
+  margin-top: 1.5rem;
+}
+
+li, dt, dd, br, th, td {
+  margin-top: 0;
+}
+
+main * + *:not(p) {
+  margin: 3rem 0;
+}
+
+/* defense against WYSIWYG stray tags */
+main :empty {
+  display: none;
 }
 
 /*
@@ -23,7 +52,7 @@ Alt lang (case French)
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
 */
 :lang(fr) {
-    font-family: French Font, fallback, sans-serif;
+  font-family: French Font, fallback, sans-serif;
 }
 
 /*
@@ -31,13 +60,13 @@ Web Fonts
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
 */
 html {
-    /* system font with fallback */
-    font-family: MySystemSerif, serif;
+  /* system font with fallback */
+  font-family: MySystemSerif, serif;
 }
 
 html.fonts-loaded {
-    /* web font with fallbacks, see font face observer */
-    font-family: MyWebSerif, MySystemSerif, serif;
+  /* web font with fallbacks, see font face observer */
+  font-family: MyWebSerif, MySystemSerif, serif;
 }
 
 /*
@@ -45,27 +74,35 @@ Print
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
 */
 @media print {
-    body > *:not(main) {
-      display: none;
+  body > *:not(main) {
+    display: none;
   }
 }
 
 /*
 A11y
 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 /*
 Skip links
+add tabindex="-1" to the link target
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
 */
 [href="#main"] {
-    position: absolute;
-    top: 0;
-    right: 100%; /* moves off screen */
+  position: absolute;
+  top: 0;
+  right: 100%; /* moves off screen */
 }
 
 [href="#main"]:focus {
-    right: auto;
+  right: auto;
 }
 
 /*
@@ -74,23 +111,23 @@ Link underline that does not cover the drop letters
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
 */
 p a {
-    text-decoration: none;
-    text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
-        0 0.05em 0 #fff, 0 -0.05em 0 #fff,
-        0.1em 0 0 #fff, -0.1em 0 0 #fff,
-        0 0.1em 0 #fff, 0 -0.1em 0 #fff;
-    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    background-repeat: repeat-x;
-    background-position: bottom 0.05em center;
-    background-size: 100% 0.05em;
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
+    0 0.05em 0 #fff, 0 -0.05em 0 #fff,
+    0.1em 0 0 #fff, -0.1em 0 0 #fff,
+    0 0.1em 0 #fff, 0 -0.1em 0 #fff;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.05em center;
+  background-size: 100% 0.05em;
 }
 
 /*
 Link focus
 */
 p a:focus {
-    outline: none;
-    background-color: #cef;
+  outline: none;
+  background-color: #cef;
 }
 
 /*
@@ -98,15 +135,15 @@ External links
 */
 [href^="http"]:not([href*="<...current domain...>"]) {
   display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-image: url('path/to/external-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75% auto;
+  width: 1em;
+  height: 1em;
+  background-image: url('path/to/external-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% auto;
 /* alternative text rules */
-    content: '(external link)';
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 1em; /* the width of the icon */
+  content: '(external link)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em; /* the width of the icon */
 }
