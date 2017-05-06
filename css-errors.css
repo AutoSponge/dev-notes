@@ -1,4 +1,5 @@
 /*
+displays error state and message for a fieldset
 @see https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d
 */
 fieldset:invalid {
@@ -8,3 +9,12 @@ fieldset:invalid {
 fieldset:invalid:before {
 	content: attr(data-error-message);
 }
+
+/*
+for required field, show invalid only when not focused
+@see https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d
+*/
+input:invalid:not(:focus) {
+	border-color: red;
+}
+
