@@ -18,3 +18,11 @@ input:invalid:not(:focus) {
 	border-color: red;
 }
 
+/*
+A11y
+*/
+
+/* to remind devs to set aria */
+[aria-invalid="true"] {
+	border-color: red;
+}
