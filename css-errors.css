@@ -1,0 +1,10 @@
+/*
+@see https://medium.com/samsung-internet-dev/native-form-validation-part-1-bf8e35099f1d
+*/
+fieldset:invalid {
+	border-color: red;
+}
+
+fieldset:invalid:before {
+	content: attr(data-error-message);
+}
