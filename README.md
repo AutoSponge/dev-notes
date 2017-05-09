@@ -12,5 +12,6 @@
     - [ld-jsonstream](https://www.npmjs.com/package/ld-jsonstream)
     - [nano-json-stream-parser](https://github.com/MaiaVictor/nano-json-stream-parser)
 - [ ] consider [pump](https://github.com/mafintosh/pump) with a json mapper/serializer and ndjson
+- [ ] 'Content-Type: application/x-ndjson'
 
 https://bloomberg.github.io/bucklescript/Manual.html
