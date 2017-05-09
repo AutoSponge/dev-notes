@@ -8,6 +8,7 @@
 - [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) 
   - [implementation](https://www.npmjs.com/package/ndjson)
   - [tools](https://github.com/mbostock/ndjson-cli)
+  - [event-stream](https://www.npmjs.com/package/event-stream)
 - [ ] look at alt clients 
     - [jsonparse](https://github.com/creationix/jsonparse)
     - [jsonstream](https://github.com/dominictarr/JSONStream)
