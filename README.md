@@ -14,8 +14,8 @@ const view = new Proxy(
 - [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) [implementation](https://www.npmjs.com/package/ndjson)
 - [ ] look at alt clients 
     - [jsonparse](https://github.com/creationix/jsonparse)
-    - [jake](https://jakearchibald.com/2016/fun-hacks-faster-content/
-    - [ld-jsonstream](https://www.npmjs.com/package/ld-jsonstream))
+    - [jake](https://jakearchibald.com/2016/fun-hacks-faster-content/)
+    - [ld-jsonstream](https://www.npmjs.com/package/ld-jsonstream)
     - [nano-json-stream-parser](https://github.com/MaiaVictor/nano-json-stream-parser)
 
 https://bloomberg.github.io/bucklescript/Manual.html
