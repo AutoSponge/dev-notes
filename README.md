@@ -5,7 +5,9 @@
 
 
 # TODO
-- [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) [implementation](https://www.npmjs.com/package/ndjson)
+- [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) 
+  - [implementation](https://www.npmjs.com/package/ndjson)
+  - [tools](https://github.com/mbostock/ndjson-cli)
 - [ ] look at alt clients 
     - [jsonparse](https://github.com/creationix/jsonparse)
     - [jake](https://jakearchibald.com/2016/fun-hacks-faster-content/)
