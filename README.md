@@ -10,6 +10,7 @@
   - [tools](https://github.com/mbostock/ndjson-cli)
 - [ ] look at alt clients 
     - [jsonparse](https://github.com/creationix/jsonparse)
+    - [jsonstream](https://github.com/dominictarr/JSONStream)
     - [jake](https://jakearchibald.com/2016/fun-hacks-faster-content/)
     - [ld-jsonstream](https://www.npmjs.com/package/ld-jsonstream)
     - [nano-json-stream-parser](https://github.com/MaiaVictor/nano-json-stream-parser)
