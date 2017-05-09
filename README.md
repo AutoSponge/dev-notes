@@ -11,5 +11,6 @@
     - [jake](https://jakearchibald.com/2016/fun-hacks-faster-content/)
     - [ld-jsonstream](https://www.npmjs.com/package/ld-jsonstream)
     - [nano-json-stream-parser](https://github.com/MaiaVictor/nano-json-stream-parser)
+- [ ] consider [pump](https://github.com/mafintosh/pump) with a json mapper/serializer and ndjson
 
 https://bloomberg.github.io/bucklescript/Manual.html
