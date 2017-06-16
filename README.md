@@ -20,3 +20,6 @@
 - [ ] 'Content-Type: application/x-ndjson'
 
 https://bloomberg.github.io/bucklescript/Manual.html
+
+# State management
+* compare [proto-state](https://www.webreflection.co.uk/blog/2016/12/23/javascript-proto-state) with set-state
