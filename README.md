@@ -26,3 +26,6 @@ https://bloomberg.github.io/bucklescript/Manual.html
 
 # Funny
 - [wtfjs](https://github.com/denysdovhan/wtfjs)
+
+# RPG
+- [micro-rpgs](https://github.com/brunobord/micro-rpg-catalog)
