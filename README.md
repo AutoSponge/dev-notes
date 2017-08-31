@@ -5,6 +5,8 @@
 
 
 # TODO
+- hotkeys best practice to support a11y
+- placeholders best practice (aria-label to "cover"?)
 - [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) 
   - [implementation](https://www.npmjs.com/package/ndjson)
   - [tools](https://github.com/mbostock/ndjson-cli)
