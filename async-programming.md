@@ -312,3 +312,4 @@ citation [perfbook](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfb
 - https://impythonist.wordpress.com/2014/12/11/anatomy-and-application-of-parallel-programming-in-python/
 - https://nodejs.org/api/vm.html VM api can also create threads, needs investigation
 - https://github.com/robtweed/qewd creates child processes for each request
+- https://github.com/allegro/node-worker-nodes separate processes
