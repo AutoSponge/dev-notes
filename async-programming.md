@@ -313,3 +313,4 @@ citation [perfbook](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfb
 - https://nodejs.org/api/vm.html VM api can also create threads, needs investigation
 - https://github.com/robtweed/qewd creates child processes for each request
 - https://github.com/allegro/node-worker-nodes separate processes
+- https://github.com/mikeal/znode Bi-directional RPC through any stream
