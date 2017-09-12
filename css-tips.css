@@ -196,3 +196,24 @@ External links
 p {
   max-width: 65ch;
 }
+
+/* Print CSS */
+@media print {
+  .header {
+    position: static;
+  }
+  nav {
+    display: none;
+  }
+  body > *:not(main) {
+    display: none;
+  }
+  section {
+    margin-bottom: 2cm;
+    font-size: 14pt;
+    padding: 8mm;
+  }
+  a[href^="http"]:not([href*="mywebsite.com"])::after {
+    content: " (" attr(href) ")";
+  }
+}
