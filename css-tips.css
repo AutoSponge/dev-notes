@@ -84,6 +84,12 @@ html {
   font-size: calc(1em + 1vw); 
 }
 
+/* from http://css-minsk-js.by/ & https://speakerdeck.com/matuzo/designed-for-inclusion-writing-css-with-accessibility-in-mind */
+html {
+  font-size: 4vh;
+  line-height: 1.3;
+}
+
 /*
 Alt lang (case French)
 Excerpt From: Heydon Pickering. “Inclusive Design Patterns.” iBooks. 
@@ -183,4 +189,10 @@ External links
   overflow: hidden;
   white-space: nowrap;
   text-indent: 1em; /* the width of the icon */
+}
+
+/* limit paragraph width */
+/* https://speakerdeck.com/matuzo/designed-for-inclusion-writing-css-with-accessibility-in-mind */
+p {
+  max-width: 65ch;
 }
