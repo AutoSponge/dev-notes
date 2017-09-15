@@ -7,7 +7,7 @@ git reset --hard
 
 git clean -fdx
 
-# Fetch all commits and new branches/tags from the git server.
+# Fetch all commits and new branches/tags from the git server and remove deleted branches.
 
 git fetch --all --prune
 
