@@ -9,7 +9,7 @@ git clean -fdx
 
 # Fetch all commits and new branches/tags from the git server.
 
-git fetch
+git fetch --all --prune
 
 # Set the index and working directory to the required tag or branch.
 # Notes:
