@@ -316,3 +316,4 @@ citation [perfbook](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfb
 - https://github.com/reconbot/child-process-require Require a function and run it in a child process
 - https://github.com/mikeal/znode Bi-directional RPC through any stream
 - https://github.com/GoogleChromeLabs/comlink rpc over workers
+- https://github.com/Microsoft/napajs Microsoft multi-threaded js runtime
