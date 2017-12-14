@@ -29,6 +29,8 @@ Example:
 
 - ?should designs have a confidence level?
   - tolerance for failure, inversely proportional to innovation
+  - shipping to learn
+  - "what do you mean by innovation?"
 
 
 Spotlight: Use case list
