@@ -42,3 +42,7 @@ Spotlight: Use case list
   - may vary in abstraction level
   - may vary in complexity
 - who are these tasks important to?
+
+
+Facilitation Recipe:
+- Objective -> Prompt -> Framework -> Questions
