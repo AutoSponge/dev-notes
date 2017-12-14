@@ -27,5 +27,16 @@ Example:
 - wireframing (focusing)
 - planning (focusing)
 
-- ? should designs have a confidence level?
+- ?should designs have a confidence level?
+  - tolerance for failure, inversely proportional to innovation
 
+
+Spotlight: Use case list
+- what tasks must the product support?
+  - from the user's prospective
+  - may address multiple users
+  - verb/noun construction
+  - grounded in research
+  - may vary in abstraction level
+  - may vary in complexity
+- who are these tasks important to?
