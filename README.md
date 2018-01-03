@@ -5,6 +5,7 @@
 
 
 # TODO
+- [IP and OSS](https://processmechanics.com/2015/07/22/a-model-ip-and-open-source-contribution-policy/)
 - hotkeys best practice to support a11y
 - placeholders best practice (aria-label to "cover"?)
 - [ ] look at [NDJSON](http://specs.okfnlabs.org/ndjson/) 
