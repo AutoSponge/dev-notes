@@ -27,3 +27,8 @@ git checkout %TAG_OR_BRANCH%
 
 git pull --ff-only
 ```
+
+```
+alias.continue=!git add . && git commit --amend --no-edit && git push --force-with-lease
+alias.dev=!git fetch origin && git rebase -p origin/develop
+```
