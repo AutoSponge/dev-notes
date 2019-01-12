@@ -1,14 +1,15 @@
 /**
  * returns an iterable of all possible combinations of a set of items to a length of K
  * @param {array} items
- * @param {number} [limitK] defaults to items.length
+ * @param {number} [start] defatuls to permutations of length 1
+ * @param {number} [limitK] defaults to permutations of length items.length
  * @returns {iterable}
  * @private
  * @example
  *   kCombinations
  */
-function* kCombinations(items, limitK = items.length) {
-  let k = 1;
+function* kCombinations(items, start = 1, limitK = items.length) {
+  let k = start;
   for (; k <= limitK; k += 1) {
     yield* combine(items, k);
   }
