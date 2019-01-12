@@ -1,35 +1,35 @@
 /**
- * returns an iterable of all possible combinations of a set of items to a length of K
+ * returns an iterable of all possible combinations of a collection of items
  * @param {array} items
  * @param {number} [start] defatuls to permutations of length 1
- * @param {number} [limitK] defaults to permutations of length items.length
+ * @param {number} [limit] defaults to permutations of length items.length
  * @returns {iterable}
  * @private
  * @example
- *   kCombinations
+ *   combinations
  */
-function* kCombinations(items, start = 1, limitK = items.length) {
-  let k = start;
-  for (; k <= limitK; k += 1) {
-    yield* combine(items, k);
+function* combinations(items, start = 1, limit = items.length) {
+  let K = start;
+  for (; K <= limit; K += 1) {
+    yield* combine(items, K);
   }
 }
 
 /**
  * @param {array} items
- * @param {number} k
+ * @param {number} K
  * @param {object} continuation
  * @returns {iterable}
  * @private
  */
-function* combine(items, k, continuation = {}) {
+function* combine(items, K, continuation = {}) {
   const { data = [], start = 0, index = 0 } = continuation;
-  if (index === k) {
-    yield data.slice(0, index).join('');
+  if (index === K) {
+    yield data.slice(0, index);
   }
   const end = items.length - 1;
-  for (let i = start; i <= end && end - i + 1 >= k - index; i += 1) {
+  for (let i = start; i <= end && end - i + 1 >= K - index; i += 1) {
     data[index] = items[i];
-    yield* combine(items, k, { data, start: i + 1, index: index + 1 });
+    yield* combine(items, K, { data, start: i + 1, index: index + 1 });
   }
 }
