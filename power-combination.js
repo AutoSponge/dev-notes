@@ -6,9 +6,9 @@
  * @returns {iterable}
  * @private
  * @example
- *   combinations
+ *   permutationCombination
  */
-function* combinations(items, start = 1, limit = items.length) {
+function* powerCombinations(items, start = 1, limit = items.length) {
   let K = start;
   for (; K <= limit; K += 1) {
     yield* combine(items, K);
@@ -33,3 +33,6 @@ function* combine(items, K, continuation = {}) {
     yield* combine(items, K, { data, start: i + 1, index: index + 1 });
   }
 }
+
+// https://gist.github.com/axelpale/3118596
+// https://www.npmjs.com/package/js-combinatorics
