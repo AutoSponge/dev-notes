@@ -36,3 +36,4 @@ function* combine(items, K, continuation = {}) {
 
 // https://gist.github.com/axelpale/3118596
 // https://www.npmjs.com/package/js-combinatorics
+// https://en.wikipedia.org/wiki/Power_set
