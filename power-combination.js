@@ -1,7 +1,7 @@
 /**
  * returns an iterable of all possible combinations of a collection of items
  * @param {array} items
- * @param {number} [start] defatuls to permutations of length 1
+ * @param {number} [start] defaults to permutations of length 1
  * @param {number} [limit] defaults to permutations of length items.length
  * @returns {iterable}
  * @private
