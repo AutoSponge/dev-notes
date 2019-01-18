@@ -6,7 +6,7 @@
  * @returns {iterable}
  * @private
  * @example
- *   permutationCombination
+ *   [...powerCombinations([1,2,3])] // => [ [ 1 ], [ 2 ], [ 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ], [ 1, 2, 3 ] ]
  */
 function* powerCombinations(items, start = 1, limit = items.length) {
   let K = start;
