@@ -37,3 +37,6 @@ elem.firstChild.data = string // fastest
 ```js
 elem.insertAdjacentText(position, string)
 ```
+
+// https://jakearchibald.github.io/streaming-html/
+// https://github.com/jakearchibald/streaming-html
