@@ -1,5 +1,6 @@
 # to-file
 - [hotkeys](https://github.com/jaywcjlove/hotkeys)
+- [css unique selector](https://github.com/fczbkk/css-selector-generator-benchmark)
 
 # dev-notes
 
