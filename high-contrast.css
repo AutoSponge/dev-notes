@@ -1,0 +1,7 @@
+/* 🔥 Highlight the currently focused field in High Contrast theme using the colour specified by the user in their Windows Control Pane: */
+
+@media (-ms-high-contrast: active) {
+  input:focus {
+    background-color: highlight;
+  }
+}
